@@ -1,2 +1,2 @@
 # minilibC
-A minimal implementation of libc functions from scratch, created for learning and understanding C library internals
+MiniLibC is a lightweight implementation of a subset of the standard C library (libc). This project aims to provide a minimalistic yet functional version of commonly used libc functions, written from scratch. It is designed for educational purposes, to help understand how standard library functions work under the hood, or for use in environments where a full libc implementation is not available.
