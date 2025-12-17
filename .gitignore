@@ -1,0 +1,32 @@
+# Object files
+*.o
+*.obj
+
+# Libraries
+*.a
+*.lib
+
+# Executables
+main
+a.out
+tests/test_main
+tests/test_runner_debug
+tests/new_runner
+
+# Temporary files
+*.tmp
+*~
+
+# Debug and Coverage
+*.dSYM/
+*.gcno
+*.gcda
+*.gcov
+coverage.info
+out/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+.DS_Store

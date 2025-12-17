@@ -18,7 +18,7 @@ Included modules:
 - **Numbers**: `ft_atoi`, `ft_itoa`
 - **FD output**: `ft_putchar_fd`, `ft_putstr_fd`, `ft_putendl_fd`, `ft_putnbr_fd`
 - **Linked list**: `ft_lst*`
-- **I/O**: `get_next_line`
+- **I/O**: `get_next_line`, `ft_printf`
 
 ### Build
 From the repo root:
@@ -32,6 +32,13 @@ Clean:
 ```bash
 make clean
 make fclean
+```
+
+Debug & Coverage:
+
+```bash
+make debug      # bitcode with ASan
+make coverage   # generate coverage report
 ```
 
 ### Use it in another project
@@ -54,6 +61,9 @@ In code:
   - Returns the next line (including the trailing `\n` if present).
   - Uses a per-file-descriptor stash (so you can interleave reads across FDs).
   - Caller must `free()` the returned line.
+- **`ft_printf(const char *fmt, ...)`**:
+  - Custom implementation of printf.
+  - Supports: `%c`, `%s`, `%p`, `%d`, `%i`, `%u`, `%x`, `%X`, `%%`.
 
 ### Quick test run
 If you have the `tests/` folder (provided by this repo), you can run:
